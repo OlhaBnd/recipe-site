@@ -1,0 +1,155 @@
+/* global.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #5a4a42;
+}
+
+/* Хедер */
+header {
+    background-color: #e0c9a6; /* Світлий бежевий */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Логотип */
+.logo img {
+    height: 50px; /* Висота логотипу */
+    width: auto;
+}
+
+/* Навігація */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #5a4a42; /* Темний бежевий */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #8b7355; /* Акцентний колір при наведенні */
+}
+
+/* Стилі для картинки входу */
+.login-image img {
+    width: 40px; /* Розмір картинки */
+    height: 40px;
+    border-radius: 50%; /* Зробити круглою */
+    transition: transform 0.3s ease; /* Анімація при наведенні */
+}
+
+.login-image img:hover {
+    transform: scale(1.1); /* Збільшення картинки при наведенні */
+}
+
+/* Футер */
+footer {
+    background-color: #e0c9a6;
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #5a4a42;
+}
+
+/* login.css */
+.login {
+    padding: 60px 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Напівпрозорий білий фон */
+    text-align: center;
+}
+
+.login h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #8b7355;
+}
+
+.login form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.login .form-group {
+    margin-bottom: 20px;
+}
+
+.login .form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #5a4a42;
+}
+
+.login .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #8b7355;
+    border-radius: 5px;
+    background-color: #f5f5dc; /* Пастельний бежевий */
+    color: #5a4a42;
+}
+
+.login .form-group input:focus {
+    outline: none;
+    border-color: #6b5a4a;
+    box-shadow: 0 0 5px rgba(107, 90, 74, 0.5);
+}
+
+.login .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #8b7355;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login .btn:hover {
+    background-color: #6b5a4a;
+}
+
+.login p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #5a4a42;
+}
+
+.login a {
+    color: #8b7355;
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}

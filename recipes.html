@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рецепти</title>
+    <link rel="stylesheet" href="recipes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="https://cdn-icons-png.freepik.com/256/5234/5234086.png?uid=R186596994&ga=GA1.1.346372246.1725123198&semt=ais_hybrid" alt="Логотип">
+            </div>
+            <nav>
+                <a href="index.html">Головна</a>
+                <a href="recipes.html">Рецепти</a>
+                <a href="blog.html">Кулінарний блог</a>
+                <a href="notes.html">Нотатки</a>
+            </nav>
+            <div class="login-image">
+                <a href="login.html">
+                    <img src="https://cdn-icons-png.freepik.com/256/8255/8255918.png?uid=R186596994&ga=GA1.1.346372246.1725123198&semt=ais_hybrid" alt="Вхід">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="recipes">
+            <div class="container">
+                <h2>Рецепти</h2>
+                <!-- Фільтри -->
+                <div class="filters">
+                    <button class="filter-btn active" data-category="all">Показати всі</button>
+                    <button class="filter-btn" data-category="soups">Супи</button>
+                    <button class="filter-btn" data-category="main-courses">Основні страви</button>
+                    <button class="filter-btn" data-category="hot-dishes">Гарячі страви</button>
+                    <button class="filter-btn" data-category="desserts">Десерти</button>
+                    <button class="filter-btn" data-category="drinks">Напої</button>
+                    <button class="filter-btn" data-category="breakfast">Сніданок</button>
+                </div>
+                <!-- Список рецептів -->
+                <div id="recipes-list" class="recipes-list"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Значок "+" для додавання рецепту -->
+    <div class="add-recipe-icon" id="add-recipe-icon">
+        <i class="fas fa-plus"></i>
+    </div>
+
+    <!-- Форма для додавання нового рецепту -->
+    <div class="add-recipe-form-container" id="add-recipe-form-container">
+        <form id="add-recipe-form" class="add-recipe-form">
+            <h3>Додати новий рецепт</h3>
+            <div class="form-group">
+                <label for="recipe-title">Назва рецепту:</label>
+                <input type="text" id="recipe-title" name="recipe-title" required>
+            </div>
+            <div class="form-group">
+                <label for="recipe-category">Категорія:</label>
+                <select id="recipe-category" name="recipe-category" required>
+                    <option value="soups">Супи</option>
+                    <option value="main-courses">Основні страви</option>
+                    <option value="hot-dishes">Гарячі страви</option>
+                    <option value="desserts">Десерти</option>
+                    <option value="drinks">Напої</option>
+                    <option value="breakfast">Сніданок</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="recipe-ingredients">Інгредієнти:</label>
+                <textarea id="recipe-ingredients" name="recipe-ingredients" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="recipe-instructions">Приготування:</label>
+                <textarea id="recipe-instructions" name="recipe-instructions" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="recipe-image">Посилання на зображення:</label>
+                <input type="url" id="recipe-image" name="recipe-image" placeholder="https://example.com/image.jpg">
+            </div>
+            <button type="submit" class="btn">Додати рецепт</button>
+            <button type="button" class="btn btn-close" id="close-form">Закрити</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Кулінарні рецепти. Усі права захищені.</p>
+    </footer>
+
+    <script src="recipes.js"></script>
+</body>
+</html>

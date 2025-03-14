@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Увійти</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Логотип -->
+            <div class="logo">
+                <img src="https://cdn-icons-png.freepik.com/256/5234/5234086.png?uid=R186596994&ga=GA1.1.346372246.1725123198&semt=ais_hybrid" alt="Логотип">
+            </div>
+
+            <!-- Навігація -->
+            <nav>
+                <a href="index.html">Головна</a>
+                <a href="recipes.html">Рецепти</a>
+                <a href="blog.html">Кулінарний блог</a>
+                <a href="notes.html">Нотатки</a>
+            </nav>
+
+            <!-- Картинка для входу -->
+            <div class="login-image">
+                <a href="login.html">
+                    <img src="https://cdn-icons-png.freepik.com/256/8255/8255918.png?uid=R186596994&ga=GA1.1.346372246.1725123198&semt=ais_hybrid" alt="Вхід">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Форма входу -->
+    <main>
+        <section class="login">
+            <div class="container">
+                <h2>Увійти</h2>
+                <form onsubmit="redirectToHome(event)">
+                    <div class="form-group">
+                        <label for="email">Електронна пошта:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Пароль:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn">Увійти</button>
+                </form>
+                <p>Ще не маєте акаунта? <a href="register.html">Зареєструватися</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <p>&copy; 2023 Кулінарні рецепти. Усі права захищені.</p>
+    </footer>
+    <script src="login.js"></script>
+</body>
+</html>

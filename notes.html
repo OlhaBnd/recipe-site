@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мої нотатки</title>
+    <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Логотип -->
+            <div class="logo">
+                <img src="https://cdn-icons-png.freepik.com/256/5234/5234086.png?uid=R186596994&ga=GA1.1.346372246.1725123198&semt=ais_hybrid" alt="Логотип">
+            </div>
+
+            <!-- Навігація -->
+            <nav>
+                <a href="index.html">Головна</a>
+                <a href="recipes.html">Рецепти</a>
+                <a href="blog.html">Кулінарний блог</a>
+                <a href="notes.html">Нотатки</a>
+            </nav>
+
+            <!-- Картинка для входу -->
+            <div class="login-image">
+                <a href="login.html">
+                    <img src="https://cdn-icons-png.freepik.com/256/8255/8255918.png?uid=R186596994&ga=GA1.1.346372246.1725123198&semt=ais_hybrid" alt="Вхід">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основний контент -->
+    <main>
+        <section class="notes">
+            <div class="container">
+                <h2>Мої нотатки</h2>
+                <!-- Форма для додавання нотаток -->
+                <form id="note-form">
+                    <div class="form-group">
+                        <label for="note-title">Заголовок:</label>
+                        <input type="text" id="note-title" name="note-title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="note-content">Текст нотатки:</label>
+                        <textarea id="note-content" name="note-content" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Додати нотатку</button>
+                </form>
+
+                <!-- Список нотаток -->
+                <div id="notes-list" class="notes-list"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <p>&copy; 2025 Кулінарні рецепти. Усі права захищені.</p>
+    </footer>
+
+    <!-- Скрипт для роботи з нотатками -->
+    <script src="notes.js"></script>
+</body>
+</html>
